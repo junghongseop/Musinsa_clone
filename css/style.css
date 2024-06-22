@@ -46,7 +46,7 @@ nav {
 footer {
   height: 60px;
   position: fixed;
-  bottom: 0px;
+  bottom: 0;
   z-index: 1000;
   justify-content: space-around;
   background-color: black;
@@ -97,9 +97,22 @@ footer a {
 
 .post {
   margin-top: 100px;
+  width: 598px;
   height: 600px;
-  width: 602px;
-  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+.post img {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
 }
 
 .event {
