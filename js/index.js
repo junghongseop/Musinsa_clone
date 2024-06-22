@@ -8,7 +8,6 @@ const images = [
 let currentImageIndex = 0;
 const postElement = document.getElementById("post");
 
-// 이미지를 동적으로 추가
 images.forEach((src, index) => {
   const img = document.createElement("img");
   img.src = src;
@@ -29,8 +28,6 @@ function nextImage() {
   showImage(currentImageIndex);
 }
 
-// 초기 이미지 설정
 showImage(currentImageIndex);
 
-// 10초마다 이미지 변경
 setInterval(nextImage, 10000);
