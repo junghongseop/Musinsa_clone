@@ -10,7 +10,7 @@ body {
 
 div {
   width: 100%;
-  max-width: 600px;
+  max-width: 598px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@ header,
 nav,
 footer {
   width: 100%;
-  max-width: 600px;
+  max-width: 598px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,10 +88,31 @@ footer a {
 }
 
 .content {
-  margin-top: 100px;
   width: 100%;
-  max-width: 580px;
+  max-width: 578px;
   padding: 0 10px;
   padding-bottom: 60px;
   background-color: gray;
+}
+
+.post {
+  margin-top: 100px;
+  height: 600px;
+  width: 602px;
+  background-color: black;
+}
+
+.event {
+  width: 602px;
+  height: 45px;
+  background-color: #c1000e;
+  display: flex;
+  align-items: flex-start;
+}
+
+.text {
+  font-size: 14px;
+  color: white;
+  text-align: left;
+  padding-left: 20px;
 }
